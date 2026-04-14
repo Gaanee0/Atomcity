@@ -1,0 +1,19 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+type: dnf
+repos:
+  copr:
+    enable:
+      - yalter/niri-git
+      - ulysg/xwayland-satellite
+      - avengemedia/danklinux
+      - avengemedia/dms-git
+      - gaanee/libfprint-elanmoc2
+      - deltacopy/darkly
+      - scottames/ghostty
+      - lukenukem/asus-linux
+  files:
+    - https://terra.fyralabs.com/terra.repo
+    - https://terra.fyralabs.com/terra-extras.repo
+  cleanup: true

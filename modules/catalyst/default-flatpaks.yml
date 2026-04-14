@@ -1,0 +1,48 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+type: default-flatpaks
+configurations:
+  - scope: system
+  - notify: true
+    repo:
+      title: Flathub (system)
+    install:
+      - app.zen_browser.zen
+      - com.bitwarden.desktop
+      - com.github.tchx84.Flatseal
+      - com.github.wwmm.easyeffects
+      - com.ktechpit.ultimate-media-downloader
+      - com.obsproject.Studio
+      - com.protonvpn.www
+      - com.ranfdev.DistroShelf
+      - com.rtosta.zapzap
+      - com.stremio.Stremio
+      - com.usebottles.bottles
+      - dev.vencord.Vesktop
+      - eu.betterbird.Betterbird
+      - io.ente.auth
+      - io.github.celluloid_player.Celluloid
+      - io.github.flattool.Ignition
+      - io.github.flattool.Warehouse
+      - io.github.ilya_zlobintsev.LACT
+      - io.missioncenter.MissionCenter
+      - it.mijorus.gearlever
+      - md.obsidian.Obsidian
+      - org.feichtmeier.Musicpod
+      - org.gnome.Fractal
+      - org.gnome.World.Secrets
+      - org.kde.filelight
+      - org.kde.gwenview
+      - org.kde.okular
+      - org.onlyoffice.desktopeditors
+      - org.qbittorrent.qBittorrent
+      - org.virt_manager.virt-manager
+#  - scope: user
+#  - notify: true
+#  - repo:
+#      title: Flathub (user)
+#    install:
+#      - com.ayugram.desktop
+#      - com.ayugram.desktop.feature
+#      - net.imput.helium

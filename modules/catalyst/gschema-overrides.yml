@@ -1,0 +1,6 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+type: gschema-overrides
+include:
+  - zz1-myoverride.gschema.override # test & compile specific override file included in files/gschema-overrides/zz1-myoverride.gschema.override

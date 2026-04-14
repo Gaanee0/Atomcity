@@ -1,0 +1,9 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+type: kargs
+arch: x86_64
+kargs:
+  - rd.driver.blacklist=nouveau
+  - modprobe.blacklist=nouveau
+  - nvidia-drm.modeset=1

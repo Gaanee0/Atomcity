@@ -1,0 +1,9 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+type: containerfile
+snippets:
+  - RUN --mount=type=tmpfs,target=/tmp /some/script.sh
+containerfiles:
+  - example
+  - subroutine

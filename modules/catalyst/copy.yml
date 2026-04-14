@@ -1,0 +1,8 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+type: copy
+from: docker.io/mikefarah/yq
+src: /usr/bin/yq
+dest: /usr/bin/
+

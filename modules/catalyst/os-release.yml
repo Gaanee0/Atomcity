@@ -1,0 +1,8 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+type: os-release
+properties:
+  ID: blue_build
+  NAME: BlueBuild
+  PRETTY_NAME: BlueBuild Image

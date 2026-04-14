@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+modules:
+  # Module 1: Remove libfprint first
+  - type: dnf
+    remove:
+      packages:
+        - libfprint
+
+  # Module 2: Installation with original groupings preserved
+  - type: dnf
+    install:
+      packages:
+        # Niri
+        - repo: copr:copr.fedorainfracloud.org:yalter:niri-git
+          packages:
+            - niri
+        - repo: copr:copr.fedorainfracloud.org:ulysg:xwayland-satellite
+          packages:
+            - xwayland-satellite
+        - swaybg
+        - xdg-desktop-portal-gnome
+
+        # DMS and desktop aesthetics
+        - repo: copr:copr.fedorainfracloud.org:avengemedia:dms-git
+          packages:
+            - dms
+            - dms-cli
+        - repo: copr:copr.fedorainfracloud.org:avengemedia:danklinux
+          packages:
+            - danksearch
+            - dgop
+            - dsearch
+            - dms-greetd
+            - quickshell-git
+            - matugen
+        - repo: copr:copr.fedorainfracloud.org:deltacopy:darkly
+          packages:
+            - darkly
+        - khal
+        - greetd
+        - cava
+        - gammastep
+        - qt6ct
+        - qt5ct
+        - adw-gtk3-theme
+        - nwg-look
+        - papirus-icon-theme
+
+        # Fonts
+        - material-symbols-fonts
+        - rsms-inter-fonts
+        - qgnomeplatform-qt5
+        - qgnomeplatform-qt6
+        - fontawesome-fonts-all
+        - jetbrains-mono-fonts
+        - wine-ms-sans-serif-fonts
+
+        # Hardware enablement
+        - repo: copr:copr.fedorainfracloud.org:lukenukem:asus-linux
+          packages:
+            - asusctl
+            - supergfxctl
+        - dislocker
+        - ntfs2btrfs
+        - gvfs-fuse
+        - liquidctl
+        - coolercontrol
+        - adb-enhanced
+        - kde-partitionmanager
+        - cups-pk-helper
+        
+        # Fingerprint
+        - repo: copr:copr.fedorainfracloud.org:gaanee:libfprint-elanmoc2
+          packages:
+            - libfprint-elanmoc2
+        - fprintd
+        - fprintd-pam
+
+        # Utilities
+        - repo: copr:copr.fedorainfracloud.org:scottames:ghostty
+          packages:
+            - ghostty

@@ -1,0 +1,7 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+type: apk
+type: apt
+type: pacman
+type: zypper

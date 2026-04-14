@@ -1,0 +1,6 @@
+[Unit]
+Description=Chezmoi auto sync dotfiles
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/chezmoi re-add

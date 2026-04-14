@@ -1,0 +1,9 @@
+[Unit]
+Description=Chezmoi auto sync timer
+
+[Timer]
+OnBootSec=5m
+OnUnitInactiveSec=1h
+
+[Install]
+WantedBy=timers.target

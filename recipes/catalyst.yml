@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+name: Catalyst
+description: Custom atomic linux image for workstation based on Aurora using Niri & DMS.
+alt-tags:
+  - stable
+base-image: ghcr.io/ublue-os/aurora-dx-nvidia-open
+image-version: latest
+
+# blue-build-tag: latest-installer
+# cosign-version: latest
+# nushell-version: latest
+
+platforms:
+  - linux/amd64
+
+# labels:
+#   org.opencontainers.image.title: Catalyst
+#   org.opencontainers.image.description: Atomicity Workstation — Aurora DX + Niri + DMS
+#   org.opencontainers.image.url: https://github.com/gaanee0/atomicity
+#   org.opencontainers.image.version: latest
+
+# stages:
+
+modules:
+  - from-file: ../modules/shared/repos.yml
+  - from-file: ../modules/catalyst/dnf.yml
+  - from-file: ../modules/catalyst/files.yml
+  - from-file: ../modules/catalyst/signing.yml
+  # - from-file: ../modules/catalyst/akmods.yml
+  # - from-file: ../modules/catalyst/bling.yml
+  # - from-file: ../modules/catalyst/brew.yml
+  # - from-file: ../modules/catalyst/chezmoi.yml
+  # - from-file: ../modules/catalyst/containerfile.yml
+  # - from-file: ../modules/catalyst/copy.yml
+  # - from-file: ../modules/catalyst/default-flatpaks.yml
+  # - from-file: ../modules/catalyst/fonts.yml
+  # - from-file: ../modules/gnome-extensions.yml
+  # - from-file: ../modules/catalyst/gschema-overrides.yml
+  # - from-file: ../modules/catalyst/initramfs.yml
+  # - from-file: ../modules/catalyst/justfiles.yml
+  # - from-file: ../modules/catalyst/kargs.yml
+  # - from-file: ../modules/catalyst/os-release.yml
+  # - from-file: ../modules/catalyst/rpm-ostree.yml
+  # - from-file: ../modules/catalyst/script.yml
+  # - from-file: ../modules/catalyst/soar.yml
+  # - from-file: ../modules/shared/systemd.yml
+  # - from-file ../modules/catalyst/yafti.yml

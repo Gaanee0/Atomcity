@@ -1,0 +1,11 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+type: akmods
+base: main
+# base: asus
+install:
+  - v4l2loopback
+  # - xone
+  # - openrazer
+

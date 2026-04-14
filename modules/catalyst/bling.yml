@@ -1,0 +1,12 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+type: bling
+install:
+    - dconf-update-service # a service unit that updates the dconf db on boot
+    # - rpmfusion # install RPMFusion repos, including tainted repos & disable negativo17 repos if installed
+    # - negativo17 # install negativo17 repos and set priority to 90, uninstall RPMFusion repos if installed
+    # - ublue-update # https://github.com/ublue-os/ublue-update
+    # - 1password # install 1Password (stable) and `op` CLI tool
+    # - gnome-vrr # enables gnome-vrr for your image
+

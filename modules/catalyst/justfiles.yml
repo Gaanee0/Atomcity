@@ -1,0 +1,11 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+type: justfiles
+validate: true
+install: true
+include:
+  - common
+  - gnome/monitors.just
+  - shared/flatpak/fix-theming.just
+  - justfile1.just
