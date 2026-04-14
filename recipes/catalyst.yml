@@ -2,8 +2,8 @@
 
 name: Catalyst
 description: Custom atomic linux image for workstation based on Aurora using Niri & DMS.
-alt-tags:
-  - stable
+# alt-tags:
+#   - stable
 base-image: ghcr.io/ublue-os/aurora-dx-nvidia-open
 image-version: latest
 
@@ -11,8 +11,8 @@ image-version: latest
 # cosign-version: latest
 # nushell-version: latest
 
-platforms:
-  - linux/amd64
+# platforms:
+#   - linux/amd64
 
 # labels:
 #   org.opencontainers.image.title: Catalyst

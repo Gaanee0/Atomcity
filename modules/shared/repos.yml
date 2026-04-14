@@ -13,7 +13,11 @@ repos:
       - deltacopy/darkly
       - scottames/ghostty
       - lukenukem/asus-linux
-  files:
-      - shared/repo/terra.repo
-      - shared/repo/terra-extras.repo
+   files:
+      - https://terra.fyralabs.com/terra.repo
+      - https://terra.fyralabs.com/terra-extras.repo
+  install:
+    packages:
+      - terra-release
+      - terra-release-extra
   cleanup: true
