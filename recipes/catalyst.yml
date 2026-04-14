@@ -24,6 +24,7 @@ image-version: latest
 
 modules:
   - from-file: ../modules/shared/repos.yml
+  - from-file: ../modules/catalyst/script.yml
   - from-file: ../modules/catalyst/dnf.yml
   - from-file: ../modules/catalyst/files.yml
   - from-file: ../modules/catalyst/signing.yml
@@ -42,7 +43,6 @@ modules:
   # - from-file: ../modules/catalyst/kargs.yml
   # - from-file: ../modules/catalyst/os-release.yml
   # - from-file: ../modules/catalyst/rpm-ostree.yml
-  # - from-file: ../modules/catalyst/script.yml
   # - from-file: ../modules/catalyst/soar.yml
   # - from-file: ../modules/shared/systemd.yml
   # - from-file ../modules/catalyst/yafti.yml

@@ -13,7 +13,7 @@ repos:
       - deltacopy/darkly
       - scottames/ghostty
       - lukenukem/asus-linux
-  files:
-    - https://terra.fyralabs.com/terra.repo
-    - https://terra.fyralabs.com/terra-extras.repo
+ #  files:
+ #    - https://terra.fyralabs.com/terra.repo
+ #    - https://terra.fyralabs.com/terra-extras.repo
   cleanup: true
