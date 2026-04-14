@@ -1,0 +1,8 @@
+[terra-extras]
+name=Terra Extras $releasever
+metalink=https://tetsudou.fyralabs.com/metalink?repo=terra-extras$releasever&arch=$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://repos.fyralabs.com/terra$releasever/key.asc
+repo_gpgcheck=1
+enabled_metadata=1
