@@ -9,7 +9,8 @@ snippets:
   - echo "priority=4" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:avengemedia:dms-git.repo
   - echo "priority=4" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:deltacopy:darkly.repo
   - echo "priority=4" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:lukenukem:asus-linux.repo
-  - echo "priority=4" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:gaanee:libfprint-elanmoc2.repo
+  # - echo "priority=4" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:gaanee:libfprint-elanmoc2.repo
+  - echo "priority=4" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:gaanee:libfprint-elanmoc2-0c90.repo
   - echo "priority=4" | tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:scottames:ghostty.repo
   - dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
   - dnf5 -y config-manager setopt terra.priority=5 # terra-extras.priority=5

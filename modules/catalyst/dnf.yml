@@ -56,7 +56,7 @@ modules:
  
         # Fingerprint
         # - libfprint-elanmoc2
-        - libfprint-elanmoc2-0c9
+        - libfprint-elanmoc2-0c90
         - fprintd
         - fprintd-pam
 
