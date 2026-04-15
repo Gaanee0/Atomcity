@@ -53,9 +53,10 @@ modules:
         - ntfs2btrfs
         - adb-enhanced
         - cups-pk-helper
-        
+ 
         # Fingerprint
-        - libfprint-elanmoc2
+        # - libfprint-elanmoc2
+        - libfprint-elanmoc2-0c9
         - fprintd
         - fprintd-pam
 
