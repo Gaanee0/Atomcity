@@ -9,8 +9,7 @@ repos:
       - ulysg/xwayland-satellite
       - avengemedia/danklinux
       - avengemedia/dms-git
-      # - gaanee/libfprint-elanmoc2
-      - gaanee/libfprint-elanmoc2-0c90
+      - gaanee/libfprint-elanmoc2
       - deltacopy/darkly
       - scottames/ghostty
       - lukenukem/asus-linux

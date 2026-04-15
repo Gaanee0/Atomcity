@@ -55,8 +55,7 @@ modules:
         - cups-pk-helper
  
         # Fingerprint
-        # - libfprint-elanmoc2
-        - libfprint-elanmoc2-0c90
+        - libfprint-elanmoc2
         - fprintd
         - fprintd-pam
 
