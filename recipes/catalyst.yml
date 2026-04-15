@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 
-name: Catalyst
+name: catalyst
 description: Custom atomic linux image for workstation based on Aurora using Niri & DMS.
 # alt-tags:
 #   - stable
@@ -28,6 +28,7 @@ modules:
   - from-file: ../modules/catalyst/dnf.yml
   - from-file: ../modules/catalyst/files.yml
   - from-file: ../modules/catalyst/signing.yml
+  - from-file: ../modules/shared/cleanup.yml
   # - from-file: ../modules/catalyst/akmods.yml
   # - from-file: ../modules/catalyst/bling.yml
   # - from-file: ../modules/catalyst/brew.yml
