@@ -1,5 +1,6 @@
 name: bluebuild
 on:
+  workflow_dispatch:
   schedule:
     - cron:
         "00 11 * * *" # build at 04:30 PM IST every day
@@ -41,9 +42,10 @@ jobs:
           push: true
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
+          registry_username: ${{ github.repository_owner }}
 
           # enabled by default, disable if your image is small and you want faster builds
-          maximize_build_space: true
+          maximize_build_space: false
           # use_unstable_cli: false
           # cli_version: latest
           # registry: ghcr.io
