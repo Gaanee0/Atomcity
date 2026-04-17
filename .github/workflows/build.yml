@@ -1,6 +1,5 @@
 name: bluebuild
 on:
-  workflow_dispatch:
   schedule:
     - cron:
         "00 11 * * *" # build at 04:30 PM IST every day
